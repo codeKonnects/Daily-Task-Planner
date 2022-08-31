@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/head :: head"></head>
+<body>
+<div class="container">
+    <div th:replace="fragments/header :: header"></div>
+    <div th:if="${not #lists.isEmpty(tasks)}">
+        <div th:replace="operations/list :: Tasks"></div>
+    </div>
+    <div class="align-template" th:if="${#lists.isEmpty(tasks)}">
+        <h1>Daily Planner  is empty</h1>
+    </div>
+    <div th:replace="fragments/footer :: footer"></div>
+</div>
+</body>
+</html>
