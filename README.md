@@ -1,26 +1,77 @@
 # Daily_planner
 
-Description:
----
-```
-Приложение использует Spring Boot и движок шаблонов Thymeleaf.
-Данные хранятся в базе Postgres, обмен проходит с помощью query-запросов и организует фильтрацию,
-сортировку по значениям, регулируемую с помощью элементов управления в пользовательском интерфейсе.
-Приложение развернуто в docker.
-```  
-screenshots:
----
- ![2022-07-05_20-56-46](https://user-images.githubusercontent.com/63203877/177387719-9c0cabb9-9ec7-4cff-8607-1a2a3c3e55fa.png)
+Activity Tracker
 
-Запуск .jar:
----
-```
-java -jar .\docker\java\Daily_planner-0.0.1-SNAPSHOT.jar
-```
-Docker:
----
-```  
-cd docker\ 
-docker compose up
-```
+Jane is a student who is bad with time management. She needs an application where she can log the activities she needs to do for the day and the time allocated to complete these activities. To help Jane, you are to build an activity tracking application where she can have all the functionalities she wants.
 
+Tools
+
+· Spring MVC
+
+· Thymeleaf
+
+· Git
+
+· Spring Data JPA
+
+· JUnit/Mockito
+
+· CSS
+
+User Stories
+
+As a user I should be able to
+
+· Login
+
+· create a task.
+
+A task should be made up of
+
+® Title
+
+® Description
+
+® Status
+
+® Created At
+
+® Updated At
+
+® Completed At
+
+· view all tasks.
+
+A user should be able to view all tasks.
+
+· view a particular task.
+
+A user should be able to view a particular task
+
+· View all pending tasks.
+
+A user should be able to view all pending tasks
+
+· View all done tasks.
+
+A user should be able to view all tasks done
+
+· View all in progress tasks.
+
+A user should be able to view all in progress tasks
+
+· Move a task to done tasks. A user should be able to move a task to done task.
+
+· Move a task back to pending tasks. A user should be able to move a task to back to pending task from in progress.
+
+· Edit a task.
+
+A user should be able to edit the following fields of a task
+
+® Title
+
+® Description
+
+· Delete a task
+
+Categories: pending, done, in progress
